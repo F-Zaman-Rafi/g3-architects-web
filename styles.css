@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 200px;
+
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation-bar nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.navigation-bar h2 {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navigation-bar nav ul li {
+    padding: 0 10px;
+    color: #424242;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+
+}
+
+.heading-text h1 {
+    color: #131313;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 12% 0 2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-text p {
+    color: #727272;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.container .btn-prm button {
+    width: 180px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+}
+
+.container .btn-prm {
+
+    display: flex;
+    justify-content: center;
+}
+
+.container .btn-prm p {
+
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.banner img {
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navigation-bar nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+}
