@@ -67,7 +67,7 @@ header {
     padding-bottom: 20px;
 }
 
-.container .btn-prm button {
+.btn-prm button {
     width: 180px;
     height: 64px;
     flex-shrink: 0;
@@ -76,13 +76,13 @@ header {
     border: none;
 }
 
-.container .btn-prm {
+.btn-prm {
 
     display: flex;
     justify-content: center;
 }
 
-.container .btn-prm p {
+.btn-prm p {
 
     color: #FFF;
     text-align: center;
@@ -98,15 +98,114 @@ header {
     padding-top: 50px;
 }
 
+main {
+    padding: 50px 200px;
+
+}
+
+.feature {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.collage img {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.feature-text {
+    padding-left: 30px;
+}
+
+.feature-text h2 {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.feature-text p:nth-child(2) {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.our {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.orange {
+    color: #FF900E;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.feature-text .btn-prm {
+    padding: 40px 0;
+}
+
+.love {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lovetext {
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    /* width: 586px; */
+    line-height: 26px;
+    padding: 40px;
+    /* 162.5% */
+}
+
+.lovepic .pic {
+    height: 400px;
+}
+
+.lovepic .btn-prm {
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 576px) {
-    header {
+
+    header,
+    main {
         padding: 10px;
         text-align: center;
     }
 
-    .navigation-bar nav ul {
+    .navigation-bar nav ul,
+    .feature {
         flex-direction: column;
         padding: 10px;
     }
@@ -115,6 +214,10 @@ header {
         flex-direction: column;
         padding: 10px;
 
+    }
+
+    .collage {
+        grid-template-columns: 1fr;
     }
 
 }
